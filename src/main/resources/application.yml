@@ -1,0 +1,16 @@
+#Indicate the default PORT where this service will be started
+server:
+  port: 8761
+  
+#telling the server not to register himself in the service
+eureka:
+  client:
+    registerWithEureka: false   
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0 #wait time for subsequent sync
+
+#enable/disable spring banner
+spring:
+    main:
+     banner-mode: 'off'
